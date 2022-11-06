@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
   <ThemeProvider enableSystem = {true} forcedTheme={'light'} >
   <Header></Header>
-  <div style={{height:"0px"}}></div>
+  
   <Component {...pageProps} />
   <Footer></Footer>
   </ThemeProvider>

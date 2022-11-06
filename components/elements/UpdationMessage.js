@@ -1,5 +1,5 @@
 import g from '../../styles/global.module.css'
-export default function Chip(p) {
+export default function UpdationMessage(p) {
     return (
     <div style={{
     

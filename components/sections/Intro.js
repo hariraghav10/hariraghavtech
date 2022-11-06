@@ -5,8 +5,8 @@ import Profile from '../../public/p1.png'
 import g from '../../styles/global.module.css'
 import { useState } from "react"
 export default function Intro(){
-    const [isHovering, setIsHovering] = useState(false);
-
+  const [isHovering, setIsHovering] = useState(false);
+  
   const handleMouseEnter = () => {
     setIsHovering(true);
   };
@@ -25,13 +25,11 @@ export default function Intro(){
              
              }}
         >
-        <div style={{
-           
-            }} className={g.IntroContent}>
+        <div  className={g.IntroContent}>
            
            <div
            style={{
-            //border:"1px solid yellow",
+            border:"0px solid yellow",
            }}
            className={g.IntroText}
            >
@@ -42,15 +40,11 @@ export default function Intro(){
     fontSize:"2rem"
      }} className={g.animtext1}> .</span></h1>
             <h1
-            style={{
-           
-            }}
+            
             className={g.Name}
             >Hari Raghav</h1>
             <p 
-            style={{
-                
-            }}
+            
             className={g.IntroP}
             >Fullstack developer and programmer with predominant interest on javascript, python and machine learning <Link href="/about" className={g.l1}>{'read more ->'}</Link></p>
            </div>

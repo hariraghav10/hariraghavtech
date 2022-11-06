@@ -16,7 +16,7 @@ export default function Tech() {
 
         
         
-        <Heading >Tech Stacks I'm Learning<br></br>and Working</Heading>
+        <Heading >Tech Stacks Im Learning<br></br>and Working</Heading>
         <div className={g.ChipsCover}>
         <div   className={g.chipDiv} >
         <Chip anim={g.animback1}>React Js</Chip>

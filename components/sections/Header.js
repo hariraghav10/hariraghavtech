@@ -7,8 +7,7 @@ const HeaderStyle={
     alignItems: "center",
     //justifyContent: "space-around",
     position:"sticky",
-    top:"0",
-    z:"0",
+    
     backgroundColor:"white",
     borderBottom:"1px solid rgb(0,0,0,0.1)",
     //border:"1px solid red"

@@ -4,7 +4,7 @@ export default function Logo() {
     <div
     style={{
       
-      //border:"1px solid black"
+      border:"0px solid black"
     }}
     >
     <svg

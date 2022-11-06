@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Intro from '../components/sections/Intro'
 import Tech from '../components/sections/Tech'
-import styles from '../styles/Home.module.css'
 import g from '../styles/global.module.css'
 
 export default function Home() {
