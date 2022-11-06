@@ -1,0 +1,333 @@
+/*  Elements  */
+.Logo{
+    width:168px;
+    height:87px;
+    margin:0 auto 0 2rem;
+}
+.ProfileImage{
+    border-radius:5.5rem;
+}
+.Heading{
+    color:#1A1A1A;
+    font-size:40px;
+    font-weight:"670";   
+    
+    text-align:center;
+    border:0px solid green;
+    font-family:"Red Hat Display", sans-serif;
+}
+.colorGrey{
+    color:#616161;
+}
+.IntroHeading{
+    font-size:1.7rem;
+    margin:0;
+    font-weight:670;
+    color:#616161;
+    width:25rem;
+    text-align:left;
+    border:0px solid green;
+    font-family:'Red Hat Display', sans-serif;
+}
+.Name{
+    font-size:4rem;
+    border:0px solid green;
+    margin:2rem 0 0 0;
+}
+.list{
+    display: inline-block;
+}
+.buttonstyle{
+    list-style-type:none;
+    font-weight:bold;
+    display: inline-block;
+    margin-left:5rem;
+}
+
+.l1{
+    font-style:italic;
+    font-weight: 0.5rem;
+    color: rgb(157, 157, 157);
+}
+.l1:hover{
+    color: #CA0000;
+    font-weight: 600;
+}
+.l{
+    color:#1A1A1A;
+}
+.l:hover{
+    color: #CA0000;
+    
+}
+.chip{
+    font-size:16px;
+    width:140px;
+    padding:0.5rem 1rem;
+    font-weight:800;
+    margin:0 0rem 0 0;
+}
+.email{
+    font-size:25px;
+}
+.animtext{
+        text-align: center;
+        
+        background: linear-gradient(to right, rgb(169, 0, 0) 20%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 60%, rgb(218, 16, 16) 80%);
+        background-size: 200% auto;
+        
+        color: #000;
+        background-clip: text;
+       
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        animation: shine 0.8s linear infinite;
+       
+}
+.animback{
+    
+    align-items: center;
+    background: linear-gradient(to 45deg, rgb(180, 180, 180) 20%, rgb(241, 241, 241) 40%, rgb(240, 240, 240) 60%, rgb(120, 120, 120) 80%);
+    background-image: linear-gradient(to right, rgb(255, 89, 89), rgb(159, 0, 0), red, rgb(174, 0, 0));
+    background-size: 600%;
+    background-position: 0 0;
+    
+    
+    animation: gradients 1s linear infinite;
+   
+}
+.animback1{
+    animation: gradients 5s linear infinite;
+}
+.animback2{
+    animation: gradients 4s linear infinite;
+}
+.animback3{
+    animation: gradients 6s linear infinite;
+}
+.animback4{
+    animation: gradients 7s linear infinite;
+}
+.animback5{
+    animation: gradients 3s linear infinite;
+}
+.animback6{
+    animation: gradients 5s linear infinite;
+}
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  
+}
+@keyframes gradients {
+    0%   {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100%  {background-position: 0 0;}
+}
+.sociallinkicon:hover{
+    background-color: #CA0000;
+    border:2px solid #CA0000;
+}
+.chatDiv{
+    border:1px solid #ffffff31;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    display: none;
+    margin: -70px auto;
+    padding: 0.3rem 1rem;
+    
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.218);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 0px;
+}
+
+/*  Component  */
+.header{
+    flex-direction: row;
+    height:77px;
+}
+.chipDiv{
+    display:flex;
+    justify-content:space-between;
+    width:500px;
+    border:0px solid green;
+    margin-top:3rem;
+}
+.IntroContent{
+    border:0px solid rgb(255, 0, 174);
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    margin:20vh 0;
+}
+.IntroP{
+    width:28rem;
+    font-size:1rem;
+    border:0px solid green;
+    margin:2rem 0 0 0;
+    color:#616161;
+    }
+.ImageContainer{
+    width:380px;
+    height:320px;
+    margin:-10px 0 0 140px;
+    border:0px solid orange;
+    
+}
+.navdiv{
+    margin:0 5rem 0 auto;
+}
+.AboutComp{
+    width:60rem;
+    margin:5rem auto;
+    font-size:1.2rem;
+    line-height:140.02%;
+    letter-spacing:0.005em;
+    color: #616161;
+    font-weight:400;
+}
+
+
+/*  Section  */
+.Cont{
+    border: 0px solid red;
+}
+.TechCover{
+    
+    padding:6rem 0 2rem 0;
+}
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .Logo{
+        width:95px;
+        height:56px;
+        margin:0.5rem 0 0 1rem;
+    }
+    .ProfileImage{
+        border-radius:2.5rem;
+    }
+    .buttonstyle{
+       font-size: 0.6rem;
+       font-weight: 700;
+    }
+    .header{
+        flex-direction: row;
+        color: aqua;
+        height:50px;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Heading{
+        font-size:1.4rem;
+        margin: 2rem 0 0 0;
+        line-height: 1.8rem;
+    }
+    .IntroHeading{
+        font-size:1.1rem;
+        margin: 2rem 0 0 0;
+        line-height: 1rem;
+        width:18.5rem;
+        width: fit-content;
+        margin: auto;
+        margin: 1rem 0 0 1rem ;
+    }
+    .Name{
+        font-size:2rem;
+       width: fit-content;
+       
+       margin:2rem 0 0 1rem;
+    }
+    .chip{
+        font-size:12px;
+        width:120px;
+        padding:0.3rem 1rem;
+        font-weight:600;
+        border: 0px solid olivedrab;
+        margin:1rem 0 0 0;
+    }
+    .TechP{
+        font-size: 0.8rem;
+
+    }
+    .CreditP{
+        font-size: 0.82rem;
+    }
+    .navdiv{
+        margin:0px;
+        width: 300px;
+        width: fit-content;
+        
+        border:0px solid red;
+    }
+    .navlink{
+        margin:0 1rem 0 0;
+    }
+    .email{
+        font-size:15px;
+    }
+   .ChipsCover{
+    margin-top: 20px;
+   }
+   .chipDiv{
+        width: fit-content;
+        
+        display: block;
+        border: 0px solid green;
+        margin-top: 0.4rem;
+    }
+    .IntroText{
+        margin-top:70px;
+    }
+    .IntroContent{
+        flex-direction: column-reverse;
+        margin:9vh 0;
+        border:0px solid green;
+    }
+    .IntroP{
+    width: 18rem;
+    font-size: 0.8rem;
+    margin:1rem 0 0 0;
+    margin:40px auto;
+    margin:2rem 0 0 1rem;
+    }
+    .ImageContainer{
+        width:270px;
+        height:230px;
+        margin:0 0 0 1rem;
+        margin: auto;
+        border:0px solid orange;
+        
+    }
+    .TechCover{
+        padding:0;
+    }
+    .AboutComp{
+        width:17rem;
+        margin:2rem auto;
+        font-size:1rem;
+        line-height:140.02%;
+        letter-spacing:0.005em;
+        color: #616161;
+        font-weight:400;
+    }
+    .UpdateMsg{
+        font-size: 0.7rem;
+        margin: auto;
+        text-align: center;
+    }
+}
