@@ -8,7 +8,7 @@ import g from '../../styles/global.module.css'
 export default function ThemeChanger(){
   const [mounted, setMounted] = useState(false)
  // const { theme, setTheme } = useTheme()
-
+ const { resolvedTheme,setTheme } = useTheme()
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true)
@@ -17,10 +17,10 @@ export default function ThemeChanger(){
   if (!mounted) {
     return null
   }
-  const { resolvedTheme,setTheme } = useTheme()
+  
   return (
     <div >
-    <Image tabIndex={0} src={resolvedTheme === 'light' ? Moon : Sun} className={g.ThemeImage} onClick={e => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}></Image>
+    <Image tabIndex={0} src={resolvedTheme === 'light' ? Moon : Sun} className={g.ThemeImage} onClick={ setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}></Image>
     </div>
   )
 }
