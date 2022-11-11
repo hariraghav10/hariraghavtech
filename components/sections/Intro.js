@@ -2,8 +2,10 @@ import Heading from "../elements/Heading"
 import Link from "next/link"
 import Image from 'next/image'
 import Profile from '../../public/p1.png'
+import Profile2 from '../../public/p1 dark1.png'
 import g from '../../styles/global.module.css'
 import { useState } from "react"
+import { useTheme } from 'next-themes'
 export default function Intro(){
   const [isHovering, setIsHovering] = useState(false);
   
@@ -14,11 +16,12 @@ export default function Intro(){
   const handleMouseLeave = () => {
     setIsHovering(false);
   };
+  const { resolvedTheme } = useTheme()
     return(
 
         <div 
         style={{
-           // border:"1px solid red",
+           border:"0px solid red",
              
              justifyContent:"center",
              width:"100%",
@@ -29,7 +32,7 @@ export default function Intro(){
            
            <div
            style={{
-            border:"0px solid yellow",
+            border:"0px solid red",
            }}
            className={g.IntroText}
            >
@@ -46,12 +49,12 @@ export default function Intro(){
             <p 
             
             className={g.IntroP}
-            >Fullstack developer and programmer with predominant interest on javascript, python and machine learning <Link href="/about" className={g.l1}>{'read more ->'}</Link></p>
+            >Fullstack developer and programmer with predominant interest on javascript, python and machine learning <Link href="/about" className={g.l1}  data-theme={resolvedTheme === 'light' ? 'light' : 'dark'}>{'read more ->'}</Link></p>
            </div>
            
            <div
             className={g.ImageContainer}>
-           <Image src={Profile}
+           <Image src={Profile2}
            style={{
             width:"100%",
             height:"100%",

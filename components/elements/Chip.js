@@ -6,7 +6,7 @@ export default function Chip(p) {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    borderRadius:"20px",backgroundColor:"#F0F0F0",color:"#CA0000",color:"white",
+    borderRadius:"20px",backgroundColor:"#F0F0F0",
     boxShadow:" 1px 8px 8px -4px #ff3a33",
     }}
     className={`${g.animback} ${p.anim} ${g.chip}`}

@@ -1,38 +1,66 @@
+
+
+
+
 /*  Elements  */
+.Focus:focus{
+   
+    outline-color: red;
+}
+
 .Logo{
-    width:168px;
-    height:87px;
+    width:158px;
+    height:67px;
+    
+}
+.AboutImage{
+    width:50%;
+    height: 50%;
+    display: block;
+    margin: 4rem auto;
+    border-radius: 1rem;
+}
+.LogoCover{
     margin:0 auto 0 2rem;
 }
+.Logo :focus{
+    border:1px solid #CA0000;
+  }
 .ProfileImage{
     border-radius:5.5rem;
 }
 .Heading{
-    color:#1A1A1A;
+    color:var(--cl1);
     font-size:40px;
     font-weight:"670";   
-    
     text-align:center;
     border:0px solid green;
     font-family:"Red Hat Display", sans-serif;
 }
-.colorGrey{
-    color:#616161;
+[data-theme='dark'] .Heading{
+    color:var(--cd1);
 }
 .IntroHeading{
     font-size:1.7rem;
     margin:0;
     font-weight:670;
-    color:#616161;
+    color:var(--cl2);
     width:25rem;
     text-align:left;
     border:0px solid green;
     font-family:'Red Hat Display', sans-serif;
 }
+[data-theme='dark'] .IntroHeading{
+    color:var(--cd2);
+}
 .Name{
     font-size:4rem;
     border:0px solid green;
     margin:2rem 0 0 0;
+    color: var(--cl1);
+}
+[data-theme='dark'] .Name{
+    color: var(--cd1);
 }
 .list{
     display: inline-block;
@@ -42,20 +70,53 @@
     font-weight:bold;
     display: inline-block;
     margin-left:5rem;
+    border: 0px solid rgb(0, 187, 6);
+}
+.ThemeImageDiv{
+    list-style-type:none;
+    display: inline-block;
+    border: 0px solid black;
+    margin: auto;
+}
+.ThemeImage{ 
+    display: block;
+    width:1.4rem ;
+    height:1.4rem ;
+    border: 0px solid black;
+    margin-right:2rem;
+    cursor: pointer;
+}
+.ThemeImage:focus{
+    outline-color:red;
+}
+[data-theme='dark'] .ThemeImage:focus{
+    outline-color:red;
 }
 
 .l1{
     font-style:italic;
     font-weight: 0.5rem;
-    color: rgb(157, 157, 157);
+    color: var(--cl3);
+}
+[data-theme='dark'].l1{
+    color: var(--cd3);
 }
 .l1:hover{
     color: #CA0000;
     font-weight: 600;
 }
+/* Nav Link Color*/
 .l{
     color:#1A1A1A;
+    color: var(--cl1);
+    
 }
+
+[data-theme='dark'] .l{
+    color: var(--cd1);
+    
+}
+
 .l:hover{
     color: #CA0000;
     
@@ -66,6 +127,10 @@
     padding:0.5rem 1rem;
     font-weight:800;
     margin:0 0rem 0 0;
+    color: white;
+}
+[data-theme='dark'] .chip{
+    color: var(--cd1);
 }
 .email{
     font-size:25px;
@@ -129,6 +194,12 @@
     75% {background-position: 40%;}
     100%  {background-position: 0 0;}
 }
+.sociallinkicon{
+    background-color:var(--bl3);
+}
+[data-theme='dark'] .sociallinkicon{
+    background-color:var(--bd3);
+}
 .sociallinkicon:hover{
     background-color: #CA0000;
     border:2px solid #CA0000;
@@ -155,7 +226,13 @@
 .header{
     flex-direction: row;
     height:77px;
+    background-color: var(--bl1);
+    
 }
+[data-theme='dark'] .header{
+    background-color:var(--bd1);
+}
+
 .chipDiv{
     display:flex;
     justify-content:space-between;
@@ -175,29 +252,44 @@
     font-size:1rem;
     border:0px solid green;
     margin:2rem 0 0 0;
-    color:#616161;
+    color: var(--cl2);
+    }
+[data-theme='dark'] .IntroP{
+    color: var(--cd2);
     }
 .ImageContainer{
     width:380px;
     height:320px;
-    margin:-10px 0 0 140px;
+    margin:-30px 0 0 140px;
     border:0px solid orange;
     
 }
 .navdiv{
-    margin:0 5rem 0 auto;
+    margin:0 4rem 0 auto;
+    border:0px solid orange;
 }
 .AboutComp{
-    width:60rem;
+    width:50rem;
     margin:5rem auto;
     font-size:1.2rem;
     line-height:140.02%;
     letter-spacing:0.005em;
-    color: #616161;
     font-weight:400;
+    line-height: 2.3rem;
 }
 
+.BlackColor{
+    color:black;
+}
 
+.UpdateDiv{
+    color: var(--cl2);
+    background-color:var(--bl3) ;
+}
+[data-theme='dark'] .UpdateDiv{
+    color: var(--cd3);
+    background-color:var(--bd2) ;
+}
 /*  Section  */
 .Cont{
     border: 0px solid red;
@@ -211,23 +303,324 @@
 
 
 
-@media screen and (max-width:450px) {
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
     .Logo{
-        width:95px;
-        height:56px;
+        width:130px;
+        height:46px;
+        
+    }
+    .AboutImage{
+        width:60%;
+        height:60%;
+    }    
+    .LogoCover{
+        margin:0.5rem 0 0 1rem;
+    }
+    .ProfileImage{
+        border-radius:3.5rem;
+    }
+    .buttonstyle{
+       font-size: 0.9rem;
+       font-weight: 700;
+       margin-left:0rem;
+    }
+    .ThemeImage{ 
+        width:1rem ;
+        height:1rem ;
+        margin:2px 2rem 0 0;
+        border: 0px solid red;
+    }
+    .header{
+        flex-direction: row;
+        color: aqua;
+        height:4rem;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Heading{
+        font-size:1.4rem;
+        margin: 2rem 0 0 0;
+        line-height: 1.8rem;
+    }
+    .IntroHeading{
+        font-size:1.1rem;
+        margin: 2rem 0 0 0;
+        line-height: 1rem;
+        width:18.5rem;
+        width: fit-content;
+        margin: auto;
+        margin: 1rem 0 0 1rem ;
+    }
+    .Name{
+        font-size:2rem;
+       width: fit-content;
+       
+       margin:2rem 0 0 1rem;
+    }
+    .chip{
+        font-size:12px;
+        width:100px;
+        padding:0.3rem 1rem;
+        font-weight:600;
+        border: 0px solid olivedrab;
+        margin:0rem 0 0 0;
+    }
+    .TechP{
+        font-size: 0.8rem;
+
+    }
+    .CreditP{
+        font-size: 0.82rem;
+    }
+    .navdiv{
+        margin:0px;
+        width: 300px;
+        width: fit-content;
+        
+        border:0px solid red;
+    }
+    .navlink{
+        margin:0 1.2rem 0 0;
+    }
+    .email{
+        font-size:15px;
+    }
+   .chipDiv{
+    width:500px;
+    }
+    .IntroText{
+        margin-top:5px;
+        border:0px solid green;
+        
+    }
+    .IntroContent{
+        
+        margin:16vh 0;
+        border:0px solid green;
+    }
+    .IntroP{
+    width: 18rem;
+    font-size: 0.8rem;
+    margin:1rem 0 0 0;
+    margin:40px auto;
+    margin:2rem 0 0 1rem;
+    border:0px solid green;
+    
+    }
+    .ImageContainer{
+        width:270px;
+        height:230px;
+        margin:-10px 0 0 6rem;
+        border:0px solid orange;
+        
+    }
+    .TechCover{
+        padding:0;
+    }
+    .AboutComp{
+        width:28rem;
+        margin:2rem auto;
+        font-size:1rem;
+        line-height:140.02%;
+        letter-spacing:0.005em;
+        color: #616161;
+        font-weight:400;
+    }
+    .UpdateMsg{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:770px) {
+    .Logo{
+        width:130px;
+        height:86px;
+        
+    }
+    .AboutImage{
+        width:70%;
+        height:70%;
+    }
+    .LogoCover{
         margin:0.5rem 0 0 1rem;
     }
     .ProfileImage{
         border-radius:2.5rem;
     }
     .buttonstyle{
-       font-size: 0.6rem;
+       font-size: 0.9rem;
        font-weight: 700;
+       margin-left:0rem;
+    }
+    .ThemeImage{ 
+        width:1.1rem ;
+        height:1.1rem ;
+        margin:1px 0.5rem 0 0;
+        border: 0px solid red;
     }
     .header{
         flex-direction: row;
         color: aqua;
+        height:4rem;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Heading{
+        font-size:1.4rem;
+        margin: 2rem 0 0 0;
+        line-height: 1.8rem;
+    }
+    .IntroHeading{
+        font-size:1.1rem;
+        margin: 2rem 0 0 0;
+        line-height: 1rem;
+        width:18.5rem;
+        width: fit-content;
+        margin: auto;
+        margin: 1rem 0 0 1rem ;
+    }
+    .Name{
+        font-size:2rem;
+       width: fit-content;
+       
+       margin:2rem 0 0 1rem;
+    }
+    .chip{
+        font-size:12px;
+        width:100px;
+        padding:0.3rem 1rem;
+        font-weight:600;
+        border: 0px solid olivedrab;
+        margin:0rem 0 0 0;
+    }
+    .TechP{
+        font-size: 0.8rem;
+
+    }
+    .CreditP{
+        font-size: 0.82rem;
+    }
+    .navdiv{
+        margin:0px;
+        width: 300px;
+        width: fit-content;
+        
+        border:0px solid red;
+    }
+    .navlink{
+        margin:0 1.2rem 0 0;
+    }
+    .email{
+        font-size:15px;
+    }
+   .ChipsCover{
+    margin-top: 20px;
+   }
+   .chipDiv{
+    justify-content:space-between;
+    width:400px;
+    border:0px solid green;
+    border: 0px solid green;
+    margin-top: 2rem;
+    }
+    .IntroText{
+        margin-top:5px;
+        border:0px solid green;
+        
+    }
+    .IntroContent{
+        
+        margin:12vh 0;
+        border:0px solid green;
+    }
+    .IntroP{
+    width: 18rem;
+    font-size: 0.8rem;
+    margin:1rem 0 0 0;
+    margin:40px auto;
+    margin:2rem 0 0 1rem;
+    border:0px solid green;
+    
+    }
+    .ImageContainer{
+        width:270px;
+        height:230px;
+        margin:-10px 0 0 3rem;
+        border:0px solid orange;
+        
+    }
+    .TechCover{
+        padding:0;
+    }
+    .AboutComp{
+        width:26rem;
+        margin:2rem auto;
+        font-size:1rem;
+        line-height:140.02%;
+        letter-spacing:0.005em;
+        color: #616161;
+        font-weight:400;
+    }
+    .UpdateMsg{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .Logo{
+        width:95px;
         height:50px;
+        
+    }
+    .AboutImage{
+        width:80%;
+        height:80%;
+    }
+    .LogoCover{
+        margin:0.5rem 0 0 1rem;
+    }
+    .ProfileImage{
+        border-radius:2.5rem;
+    }
+    .buttonstyle{
+       font-size: 0.8rem;
+       font-weight: 700;
+       margin-left:0rem;
+    }
+    .ThemeImage{ 
+        width:1.1rem ;
+        height:1.1rem ;
+        margin:2px 0.5rem 0 0;
+        border: 0px solid red;
+    }
+    .header{
+        flex-direction: row;
+        color: aqua;
+        height:4rem;
         align-content: center;
         align-items: center;
         justify-content: space-between;
@@ -268,14 +661,14 @@
         font-size: 0.82rem;
     }
     .navdiv{
-        margin:0px;
+        margin:0px 0px;
         width: 300px;
         width: fit-content;
         
         border:0px solid red;
     }
     .navlink{
-        margin:0 1rem 0 0;
+        margin:0 0.7rem 0 0;
     }
     .email{
         font-size:15px;
@@ -331,3 +724,17 @@
         text-align: center;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

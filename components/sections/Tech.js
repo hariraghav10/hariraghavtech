@@ -29,7 +29,7 @@ export default function Tech() {
         <Chip anim={g.animback6}>Mongo DB</Chip>
         </div>
         </div>
-        <p style={{border:"0px solid green",margin:"4rem 0 0 0",color:"#616161",}} className={g.TechP}>Firebase, Tailwind, UI, ML, Python, ..</p>
+        <p style={{border:"0px solid green",margin:"4rem 0 0 0",}} className={g.TechP}>Firebase, Tailwind, UI, ML, Python, ..</p>
 
     </div>
         )}

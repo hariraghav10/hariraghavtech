@@ -14,7 +14,7 @@ export default function SocialLikns(p) {
         borderRadius:"50%",
         //border:"1px solid rgb(255,0,0,0.5)",
         //boxShadow:"0px 0px 5px 2px rgb(255,0,0,0.3)",
-        backgroundColor:"#bdbdbd",
+        
         //padding:"0.5rem",
         display:"flex",
         alignItems:"center",

@@ -3,7 +3,7 @@ export default function AboutContent(p) {
     return (
     <div
     style={{
-        border:"0px solid red",
+       // border:"0px solid red",
        
         
     }}
