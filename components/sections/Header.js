@@ -14,7 +14,6 @@ const HeaderStyle={
     position:"sticky",
     top:"0",
     left:"0",
-   
     borderBottom:"1px solid rgb(0,0,0,0.1)",
     //border:"1px solid red"
     
