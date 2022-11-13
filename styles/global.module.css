@@ -14,11 +14,40 @@
     
 }
 .AboutImage{
-    width:50%;
-    height: 50%;
+    width:30%;
+    height: 30%;
     display: block;
     margin: 4rem auto;
+    border-radius: 5rem;
+}
+.MessageBoxDiv{
+    display: flex;
+    padding: 2rem;
+    margin: 2rem 0;
+    width: fit-content;
+    border:0px solid #CA0000;
+    justify-content: center;
+}
+.MessageBoxImage{
+    width: 4%;
+    height: 4%; 
+    display: block;
+    margin: 0rem 0 0 0 ;
+    border-radius: 20rem;
+}
+.MessageConentBox{
+    margin: 0 0 0 1rem;
+    border:0px solid #CA0000;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: var(--bl2);
     border-radius: 1rem;
+    height: fit-content;
+}
+[data-theme='dark'] .MessageConentBox{
+    background-color: var(--bd2);
+}
+.MessageTitle{
+    margin: 0 0 0.5rem 0;
 }
 .LogoCover{
     margin:0 auto 0 2rem;
@@ -109,11 +138,13 @@
 .l{
     color:#1A1A1A;
     color: var(--cl1);
+    /*color: pink;*/
     
 }
 
 [data-theme='dark'] .l{
     color: var(--cd1);
+    /*color: green;*/
     
 }
 
@@ -316,8 +347,8 @@
         
     }
     .AboutImage{
-        width:60%;
-        height:60%;
+        width:50%;
+        height:50%;
     }    
     .LogoCover{
         margin:0.5rem 0 0 1rem;
@@ -436,6 +467,16 @@
     .UpdateMsg{
         font-size: 0.9rem;
     }
+    .MessageBoxImage{
+        width: 7%;
+        height: 7%; 
+        margin: 0rem 0 0 0;
+        border:0px solid orange;
+    }
+    .MessageConentBox{
+       font-size: 1rem;
+
+    }
 }
 
 
@@ -448,8 +489,8 @@
         
     }
     .AboutImage{
-        width:70%;
-        height:70%;
+        width:50%;
+        height:50%;
     }
     .LogoCover{
         margin:0.5rem 0 0 1rem;
@@ -575,6 +616,16 @@
     .UpdateMsg{
         font-size: 0.9rem;
     }
+    .MessageBoxImage{
+        width: 9%;
+        height: 9%; 
+        margin: 0rem 0 0 0;
+        border:0px solid orange;
+    }
+    .MessageConentBox{
+       font-size: 1rem;
+
+    }
 }
 
 
@@ -597,8 +648,8 @@
         
     }
     .AboutImage{
-        width:80%;
-        height:80%;
+        width:60%;
+        height:60%;
     }
     .LogoCover{
         margin:0.5rem 0 0 1rem;
@@ -722,6 +773,16 @@
         font-size: 0.7rem;
         margin: auto;
         text-align: center;
+    }
+    .MessageBoxImage{
+        width: 10%;
+        height: 10%; 
+        margin: 0.4rem 0 0 0;
+        border:0px solid orange;
+    }
+    .MessageConentBox{
+       font-size: 0.5rem;
+
     }
 }
 

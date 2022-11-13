@@ -34,8 +34,8 @@ export default function Footer() {
     justifyContent:"space-between",
     //border:"1px solid red"
     }}>
-    <SocialLinks w="20px" h="20px" link="www.github.com">{resolvedTheme==='light'? GL : GD}</SocialLinks>
-    <SocialLinks w="20px" h="20px" link="www.linkedin.com">{resolvedTheme==='light'? LL : LD}</SocialLinks>
+    <SocialLinks w="20px" h="20px" link="www.github.com/hariraghav10">{resolvedTheme==='light'? GL : GD}</SocialLinks>
+    <SocialLinks w="20px" h="20px" link="www.linkedin.com/in/hari-raghav/">{resolvedTheme==='light'? LL : LD}</SocialLinks>
     </div>
 
     <h3  style={{

@@ -17,6 +17,8 @@ export default function Intro(){
     setIsHovering(false);
   };
   const { resolvedTheme } = useTheme()
+
+  const ImageUrl = 'https://res.cloudinary.com/hariraghavtech/image/upload/v1668258556/hariraghavtech/V1/intro-image.png'
     return(
 
         <div 
@@ -54,7 +56,10 @@ export default function Intro(){
            
            <div
             className={g.ImageContainer}>
-           <Image src={Profile2}
+           <Image src={ImageUrl}
+           alt={'Hari Raghav, Full Stack Web Developer and creator of Hariraghavtech.com'}
+           width={500}
+           height={500}
            style={{
             width:"100%",
             height:"100%",
