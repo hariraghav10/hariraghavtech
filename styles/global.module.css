@@ -1,7 +1,5 @@
 
 
-
-
 /*  Elements  */
 .Focus:focus{
    
@@ -24,7 +22,6 @@
     display: flex;
     padding: 2rem;
     margin: 2rem 0;
-    width: fit-content;
     border:0px solid #CA0000;
     justify-content: center;
 }
@@ -32,7 +29,6 @@
     width: 4%;
     height: 4%; 
     display: block;
-    margin: 0rem 0 0 0 ;
     border-radius: 20rem;
 }
 .MessageConentBox{
@@ -316,6 +312,7 @@
 .UpdateDiv{
     color: var(--cl2);
     background-color:var(--bl3) ;
+    padding: 0 0.6rem;
 }
 [data-theme='dark'] .UpdateDiv{
     color: var(--cd3);
